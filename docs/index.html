@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureSearch - Enterprise Search as a Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>PureSearch</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Powerful Search Solutions for Modern Applications</h1>
+                <p>Empower your applications with advanced search technology and comprehensive observability</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn primary-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.svg" alt="Search Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Discover why leading organizations choose PureSearch for their critical search needs</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Enterprise Search</h3>
+                    <p>Advanced full-text search capabilities with intelligent relevance ranking, faceted navigation, and auto-suggestions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>Optimized architecture delivering sub-second query responses even under heavy load and with large datasets.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Complete Observability</h3>
+                    <p>Comprehensive monitoring and analytics dashboards providing real-time insights into search performance and user behavior.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Built on Catalyst Cloud's secure infrastructure with encryption at rest and in transit, role-based access control, and compliance features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pricing Plans</h2>
+                <p>Choose the perfect plan for your needs</p>
+            </div>
+            
+            <!-- Card-based pricing layout -->
+            <div class="pricing-cards-container">
+                <div class="pricing-card-wrapper">
+                    <div class="pricing-card">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="#contact" class="btn secondary-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card-wrapper">
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Popular</div>
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <a href="#contact" class="btn primary-btn">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card-wrapper">
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                        <a href="#contact" class="btn secondary-btn">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Feature comparison table -->
+            <div class="feature-table-container">
+                <div class="feature-section">
+                    <h4 class="feature-section-title">CORE FEATURES</h4>
+                    <div class="feature-row">
+                        <div class="feature-name">Document Capacity</div>
+                        <div class="feature-values">
+                            <div class="feature-value">10,000 documents</div>
+                            <div class="feature-value">1 million documents</div>
+                            <div class="feature-value">Unlimited</div>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-name">Storage</div>
+                        <div class="feature-values">
+                            <div class="feature-value">5 GB</div>
+                            <div class="feature-value">50 GB</div>
+                            <div class="feature-value">Custom</div>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-name">User Access</div>
+                        <div class="feature-values">
+                            <div class="feature-value">1 user</div>
+                            <div class="feature-value">5 users</div>
+                            <div class="feature-value">Unlimited</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-section">
+                    <h4 class="feature-section-title">SEARCH CAPABILITIES</h4>
+                    <div class="feature-row">
+                        <div class="feature-name">Full-text Search</div>
+                        <div class="feature-values">
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-name">Advanced Filters</div>
+                        <div class="feature-values">
+                            <div class="feature-value"><i class="fas fa-times"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-name">Semantic Search</div>
+                        <div class="feature-values">
+                            <div class="feature-value"><i class="fas fa-times"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-section">
+                    <h4 class="feature-section-title">SUPPORT</h4>
+                    <div class="feature-row">
+                        <div class="feature-name">Support Type</div>
+                        <div class="feature-values">
+                            <div class="feature-value">Community</div>
+                            <div class="feature-value">Priority Email</div>
+                            <div class="feature-value">24/7 Dedicated</div>
+                        </div>
+                    </div>
+                    <div class="feature-row">
+                        <div class="feature-name">SLA Guarantee</div>
+                        <div class="feature-values">
+                            <div class="feature-value"><i class="fas fa-times"></i></div>
+                            <div class="feature-value"><i class="fas fa-times"></i></div>
+                            <div class="feature-value"><i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .pricing {
+                    padding: 80px 0;
+                }
+                
+                .section-header {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                
+                /* Card layout styles */
+                .pricing-cards-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    margin: 0 auto 60px;
+                    max-width: 1000px;
+                }
+                
+                .pricing-card-wrapper {
+                    flex: 1;
+                    max-width: 300px;
+                }
+                
+                .pricing-card {
+                    background-color: white;
+                    border-radius: 10px;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                    padding: 30px 20px;
+                    position: relative;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.3s ease;
+                }
+                
+                .pricing-card.popular {
+                    transform: scale(1.05);
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+                    border: 2px solid #4A6CF7;
+                }
+                
+                .popular-badge {
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #4A6CF7;
+                    color: white;
+                    padding: 3px 10px;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                }
+                
+                .pricing-card h3 {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                }
+                
+                .price {
+                    margin: 20px 0 30px;
+                }
+                
+                .price .amount {
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+                
+                .price .period {
+                    font-size: 16px;
+                    color: #6c757d;
+                }
+                
+                /* Feature table styles */
+                .feature-table-container {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                }
+                
+                .feature-section {
+                    margin-bottom: 30px;
+                }
+                
+                .feature-section-title {
+                    background-color: #f8f9fa;
+                    padding: 12px 20px;
+                    margin: 0 0 15px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+                
+                .feature-row {
+                    display: flex;
+                    margin-bottom: 15px;
+                    align-items: center;
+                }
+                
+                .feature-name {
+                    flex: 1;
+                    text-align: left;
+                    font-weight: 500;
+                    padding-left: 20px;
+                }
+                
+                .feature-values {
+                    display: flex;
+                    flex: 3;
+                }
+                
+                .feature-value {
+                    flex: 1;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                
+                .fas.fa-check {
+                    color: #28a745;
+                }
+                
+                .fas.fa-times {
+                    color: #dc3545;
+                }
+                
+                /* Responsive adjustments */
+                @media (max-width: 768px) {
+                    .pricing-cards-container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .pricing-card-wrapper {
+                        width: 100%;
+                        max-width: 350px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .pricing-card.popular {
+                        transform: none;
+                    }
+                    
+                    .feature-row {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0 20px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .feature-name {
+                        margin-bottom: 10px;
+                        padding-left: 0;
+                    }
+                    
+                    .feature-values {
+                        width: 100%;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About PureSearch</h2>
+                    <p>PureSearch is a fully managed search service powered by enterprise-grade technology and hosted on Catalyst Cloud's secure and reliable infrastructure. We leverage Catalyst Cloud's managed Kubernetes service to deliver a scalable, high-performance search platform that grows with your business.</p>
+                    <p>Our mission is to empower organizations with advanced search capabilities and comprehensive observability, helping you deliver exceptional search experiences to your users while maintaining full visibility into system performance.</p>
+                    <a href="catalyst-cloud-cli-setup.html" class="btn primary-btn">View Documentation</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.svg" alt="About Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have questions or ready to elevate your search experience? Our team is here to help.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@puresearch.example.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PureSearch</h2>
+                    <p>Enterprise Search as a Service</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="catalyst-cloud-cli-setup.html">Documentation</a></li>
+                            <li><a href="#">Customer Stories</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PureSearch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,9 @@
+title: PureSearch
+description: Modern Search Solutions for Applications
+theme: jekyll-theme-cayman
+markdown: kramdown
+url: "https://sauravnz.github.io"
+baseurl: "/puresearch-web"
+github:
+  is_project_page: true
+  repository_url: https://github.com/sauravnz/puresearch-web 
