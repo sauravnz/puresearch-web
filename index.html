@@ -3,169 +3,725 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PureSearch - Enterprise Search as a Service</title>
+    <title>PureSearch - The Only Managed OpenSearch Service Built for New Zealand</title>
+    <meta name="description" content="Enterprise search and analytics, hosted on Catalyst Cloud. Your data stays in New Zealand, your team stays focused on what matters.">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-icon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo-icon.svg">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PureSearch - The Only Managed OpenSearch Service Built for New Zealand">
+    <meta property="og:description" content="Enterprise search and analytics, hosted on Catalyst Cloud. Your data stays in New Zealand, your team stays focused on what matters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://puresearch.co.nz">
+    <meta property="og:image" content="https://puresearch.co.nz/images/logo.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PureSearch - The Only Managed OpenSearch Service Built for New Zealand">
+    <meta name="twitter:description" content="Enterprise search and analytics, hosted on Catalyst Cloud. Your data stays in New Zealand, your team stays focused on what matters.">
+    <meta name="twitter:image" content="https://puresearch.co.nz/images/logo.svg">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <h1>PureSearch</h1>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo-container">
+                        <img src="images/logo-horizontal.svg" alt="PureSearch Logo" class="brand-logo" width="160" height="40">
+                    </div>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                    <li><a href="#use-cases" class="nav-link">Use Cases</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-primary nav-cta">Book Consultation</a></li>
+                </ul>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Powerful Search Solutions for Modern Applications</h1>
-                <p>Empower your applications with advanced search technology and comprehensive observability</p>
-                <div class="cta-buttons">
-                    <a href="#features" class="btn primary-btn">Learn More</a>
+                <div class="hero-text">
+                    <h1 class="hero-title">The Only Managed OpenSearch Service Built for New Zealand</h1>
+                    <p class="hero-subtitle">Enterprise search and analytics, hosted on Catalyst Cloud. Your data stays in New Zealand, your team stays focused on what matters.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-large">Book a Consultation</a>
+                        <a href="#demo" class="btn btn-secondary btn-large">Request Demo</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-badges">
+                            <span class="badge"><i class="fas fa-flag"></i> 100% NZ Hosted</span>
+                            <span class="badge"><i class="fas fa-cloud"></i> Catalyst Cloud Native</span>
+                            <span class="badge"><i class="fas fa-lock"></i> Data Sovereign</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-image.svg" alt="Search Illustration">
+                <div class="hero-visual">
+                    <div class="hero-logo-showcase">
+                        <img src="images/logo-icon.svg" alt="PureSearch Icon" class="hero-logo-icon" width="200" height="200">
+                        <div class="logo-glow"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
+    <!-- Problem/Solution Section -->
+    <section class="problem-solution" id="problem-solution">
         <div class="container">
             <div class="section-header">
-                <h2>Key Features</h2>
-                <p>Discover why leading organizations choose PureSearch for their critical search needs</p>
+                <h2>Stop Wrestling with Search Infrastructure</h2>
+                <p>Transform your search challenges into competitive advantages</p>
             </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-search"></i>
+            <div class="comparison-grid">
+                <div class="problems-column">
+                    <h3 class="column-title">Current Challenges</h3>
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h4>Complex Self-Management</h4>
+                            <p>Hours spent on cluster maintenance, scaling, and troubleshooting instead of building features</p>
+                        </div>
                     </div>
-                    <h3>Enterprise Search</h3>
-                    <p>Advanced full-text search capabilities with intelligent relevance ranking, faceted navigation, and auto-suggestions.</p>
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h4>Data Sovereignty Concerns</h4>
+                            <p>Your sensitive data stored overseas, creating compliance and latency issues</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h4>Expensive Licensing</h4>
+                            <p>Paying premium fees for basic features or facing vendor lock-in with proprietary solutions</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h4>No Local Support</h4>
+                            <p>Waiting for overseas support teams while your applications are down</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+                <div class="solutions-column">
+                    <h3 class="column-title">PureSearch Solutions</h3>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Fully Managed</h4>
+                            <p>Focus on your applications while we handle infrastructure, scaling, and maintenance</p>
+                        </div>
                     </div>
-                    <h3>High Performance</h3>
-                    <p>Optimized architecture delivering sub-second query responses even under heavy load and with large datasets.</p>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>100% New Zealand Hosted</h4>
+                            <p>Your data never leaves New Zealand shores, ensuring compliance and low latency</p>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Open Source Freedom</h4>
+                            <p>All enterprise features without vendor lock-in or restrictive licensing</p>
+                        </div>
+                    </div>
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Local Expert Support</h4>
+                            <p>New Zealand-based engineers available during your business hours</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why New Zealand Organizations Choose PureSearch</h2>
+                <p>Enterprise-grade search with local presence and expert support</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Complete Observability</h3>
-                    <p>Comprehensive monitoring and analytics dashboards providing real-time insights into search performance and user behavior.</p>
+                    <h3>Data Sovereignty Guaranteed</h3>
+                    <p>Your data never leaves New Zealand. Meet compliance requirements with confidence and keep sensitive information under local jurisdiction.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-plug"></i>
                     </div>
+                    <h3>Native Catalyst Integration</h3>
+                    <p>Deploy in minutes within your existing Catalyst Cloud environment. No complex networking or expensive egress fees.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>True Full-Text Search</h3>
+                    <p>Powerful search with relevance tuning, facets, aggregations, and ML-powered features for exceptional user experiences.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Comprehensive Observability</h3>
+                    <p>Real-time analytics, log aggregation, and APM in one unified platform. See everything, understand everything.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Predictable NZ Pricing</h3>
+                    <p>Simple pricing in NZD. No surprise fees, no currency fluctuations, no hidden costs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Local Expert Support</h3>
+                    <p>New Zealand-based engineers available during your business hours. Real people, real expertise, real support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enterprise Features Without Enterprise Complexity</h2>
+                <p>All the power you need, none of the management overhead</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-category">
+                    <h3>Search & Analytics</h3>
+                    <ul>
+                        <li>Full-text search with custom analysers</li>
+                        <li>Real-time log analytics and aggregation</li>
+                        <li>Machine learning anomaly detection</li>
+                        <li>Advanced faceting and filtering</li>
+                    </ul>
+                </div>
+                <div class="feature-category">
+                    <h3>Monitoring & Alerting</h3>
+                    <ul>
+                        <li>Comprehensive alerting and monitoring</li>
+                        <li>Kibana/OpenSearch Dashboards included</li>
+                        <li>Real-time performance metrics</li>
+                        <li>Custom dashboard creation</li>
+                    </ul>
+                </div>
+                <div class="feature-category">
+                    <h3>Developer Experience</h3>
+                    <ul>
+                        <li>RESTful API and client libraries</li>
+                        <li>Comprehensive documentation</li>
+                        <li>Easy integration guides</li>
+                        <li>Local development support</li>
+                    </ul>
+                </div>
+                <div class="feature-category">
                     <h3>Enterprise Security</h3>
-                    <p>Built on Catalyst Cloud's secure infrastructure with encryption at rest and in transit, role-based access control, and compliance features.</p>
+                    <ul>
+                        <li>Automated backups and disaster recovery</li>
+                        <li>Multi-tenant isolation</li>
+                        <li>Role-based access control</li>
+                        <li>Encryption at rest and in transit</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About PureSearch</h2>
-                    <p>PureSearch is a fully managed search service powered by enterprise-grade technology and hosted on Catalyst Cloud's secure and reliable infrastructure. We leverage Catalyst Cloud's managed Kubernetes service to deliver a scalable, high-performance search platform that grows with your business.</p>
-                    <p>Our mission is to empower organizations with advanced search capabilities and comprehensive observability, helping you deliver exceptional search experiences to your users while maintaining full visibility into system performance.</p>
-                    <a href="catalyst-cloud-cli-setup.html" class="btn primary-btn">View Documentation</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/about-image.svg" alt="About Illustration">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
+    <!-- Use Cases Section -->
+    <section class="use-cases" id="use-cases">
         <div class="container">
             <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p>Have questions or ready to elevate your search experience? Our team is here to help.</p>
+                <h2>Powering Success Across Industries</h2>
+                <p>See how PureSearch transforms businesses like yours</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
+            <div class="use-cases-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="ecommerce">E-commerce</button>
+                    <button class="tab-btn" data-tab="monitoring">Application Monitoring</button>
+                    <button class="tab-btn" data-tab="security">Security Analytics</button>
+                    <button class="tab-btn" data-tab="bi">Business Intelligence</button>
                 </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contact@puresearch.co.nz</p>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="ecommerce">
+                        <div class="use-case-content">
+                            <h3>E-commerce Excellence</h3>
+                            <p>Transform your online store with intelligent search that understands your customers.</p>
+                            <div class="use-case-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-search"></i>
+                                    <span>Product search with typo tolerance</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-user-cog"></i>
+                                    <span>Personalised recommendations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Search analytics and conversion tracking</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-filter"></i>
+                                    <span>Advanced filtering and faceting</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    <div class="tab-panel" id="monitoring">
+                        <div class="use-case-content">
+                            <h3>Application Monitoring</h3>
+                            <p>Gain complete visibility into your applications with centralised logging and monitoring.</p>
+                            <div class="use-case-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-stream"></i>
+                                    <span>Centralised log aggregation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Application performance monitoring</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bug"></i>
+                                    <span>Error tracking and analysis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Intelligent alerting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="security">
+                        <div class="use-case-content">
+                            <h3>Security Analytics</h3>
+                            <p>Protect your organisation with advanced security monitoring and threat detection.</p>
+                            <div class="use-case-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-virus"></i>
+                                    <span>SIEM capabilities</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>Threat detection and analysis</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-clipboard-check"></i>
+                                    <span>Compliance reporting</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-search-location"></i>
+                                    <span>Forensic investigation tools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="bi">
+                        <div class="use-case-content">
+                            <h3>Business Intelligence</h3>
+                            <p>Turn your data into actionable insights with powerful analytics and visualisation.</p>
+                            <div class="use-case-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-chart-pie"></i>
+                                    <span>Real-time dashboards</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>Data exploration tools</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Advanced aggregations</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-download"></i>
+                                    <span>Report generation and export</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>PureSearch</h2>
-                    <p>Enterprise Search as a Service</p>
+            <div class="section-header">
+                <h2>Why Choose PureSearch Over...</h2>
+                <p>See how we compare to other solutions</p>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight">PureSearch</th>
+                            <th>Self-hosted</th>
+                            <th>AWS OpenSearch</th>
+                            <th>Elastic Cloud</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data stays in NZ</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Fully managed</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>No egress fees</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Local support</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>NZD pricing</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td>N/A</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>No vendor lock-in</td>
+                            <td class="highlight"><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="integration" id="integration">
+        <div class="container">
+            <div class="section-header">
+                <h2>Seamlessly Integrates with Your Stack</h2>
+                <p>Works with the tools you already know and love</p>
+            </div>
+            <div class="integration-grid">
+                <div class="integration-category">
+                    <h3>Catalyst Cloud Services</h3>
+                    <div class="integration-logos">
+                        <div class="logo-item">Kubernetes</div>
+                        <div class="logo-item">Object Storage</div>
+                        <div class="logo-item">Load Balancers</div>
+                        <div class="logo-item">Networking</div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-link-group">
-                        <h3>Quick Links</h3>
+                <div class="integration-category">
+                    <h3>Popular Frameworks</h3>
+                    <div class="integration-logos">
+                        <div class="logo-item">React</div>
+                        <div class="logo-item">Vue.js</div>
+                        <div class="logo-item">Django</div>
+                        <div class="logo-item">Ruby on Rails</div>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <h3>Logging Libraries</h3>
+                    <div class="integration-logos">
+                        <div class="logo-item">Winston</div>
+                        <div class="logo-item">Log4j</div>
+                        <div class="logo-item">Serilog</div>
+                        <div class="logo-item">Logback</div>
+                    </div>
+                </div>
+                <div class="integration-category">
+                    <h3>Monitoring Tools</h3>
+                    <div class="integration-logos">
+                        <div class="logo-item">Prometheus</div>
+                        <div class="logo-item">Grafana</div>
+                        <div class="logo-item">Kibana</div>
+                        <div class="logo-item">Beats</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pricing Tailored to Your Needs</h2>
+                <p>Every organisation has unique requirements. We'll work with you to design a solution that fits your needs and budget.</p>
+            </div>
+            <div class="pricing-content">
+                <div class="pricing-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Pricing in NZD</h3>
+                        <p>No currency fluctuation surprises</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-arrow-right"></i>
+                        <h3>No Egress Fees</h3>
+                        <p>Within Catalyst Cloud</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Flexible Scaling</h3>
+                        <p>Based on your usage</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-eye"></i>
+                        <h3>Transparent Pricing</h3>
+                        <p>No hidden costs</p>
+                    </div>
+                </div>
+                <div class="pricing-cta">
+                    <h3>Ready to get started?</h3>
+                    <p>We'll analyse your current setup and provide a detailed cost comparison</p>
+                    <a href="#contact" class="btn btn-primary btn-large">Schedule a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust" id="trust">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by New Zealand Organisations</h2>
+                <p>Built on secure, compliant infrastructure</p>
+            </div>
+            <div class="trust-content">
+                <div class="customer-logos">
+                    <div class="logo-placeholder">Customer Logo</div>
+                    <div class="logo-placeholder">Customer Logo</div>
+                    <div class="logo-placeholder">Customer Logo</div>
+                    <div class="logo-placeholder">Customer Logo</div>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>ISO 27001</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>SOC 2</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>99.9% Uptime</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Data Residency Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Partnership Approach</h2>
+                <p>We believe in understanding your needs before proposing solutions</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery Call</h3>
+                        <p>Understand your current setup and challenges</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Requirements Analysis</h3>
+                        <p>Map your use cases to our capabilities</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Solution Design</h3>
+                        <p>Architect a solution that fits your needs</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Proof of Concept</h3>
+                        <p>See PureSearch in action with your data</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Migration & Launch</h3>
+                        <p>Seamless transition with full support</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Ongoing Partnership</h3>
+                        <p>Continuous optimisation and support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Bring Your Search Home?</h2>
+                <p>Let's discuss your search and analytics requirements</p>
+                <div class="cta-details">
+                    <div class="what-to-expect">
+                        <h3>What to expect:</h3>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li>Understand your current challenges</li>
+                            <li>Review your data volume and use cases</li>
+                            <li>Design a solution tailored to your needs</li>
+                            <li>Provide migration assistance planning</li>
                         </ul>
                     </div>
-                    <div class="footer-link-group">
+                    <div class="contact-form">
+                        <form id="consultation-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="company" name="company" placeholder="Company Name" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="use-case" name="use-case" required>
+                                    <option value="">Select Primary Use Case</option>
+                                    <option value="ecommerce">E-commerce Search</option>
+                                    <option value="monitoring">Application Monitoring</option>
+                                    <option value="security">Security Analytics</option>
+                                    <option value="bi">Business Intelligence</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tell us about your requirements" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">Schedule Consultation</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="alternative-cta">
+                    <p>Want to see the platform first?</p>
+                    <a href="#demo" class="btn btn-secondary">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo-horizontal.svg" alt="PureSearch Logo" class="footer-logo-img" width="160" height="40">
+                    </div>
+                    <p>The Only Managed OpenSearch Service Built for New Zealand</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#benefits">Benefits</a></li>
+                            <li><a href="#use-cases">Use Cases</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
                         <h3>Resources</h3>
                         <ul>
-                            <li><a href="catalyst-cloud-cli-setup.html">Documentation</a></li>
-                            <li><a href="#">Customer Stories</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#documentation">Documentation</a></li>
+                            <li><a href="#status">Status Page</a></li>
+                            <li><a href="#support">Support</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 PureSearch. All rights reserved.</p>
+                <p class="nz-pride">Proudly built in Aotearoa New Zealand 🇳🇿</p>
             </div>
         </div>
     </footer>
