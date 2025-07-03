@@ -86,7 +86,7 @@ p {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #2D5A87 0%, #1E3A5F 100%);
     color: var(--white);
     box-shadow: var(--shadow-light);
 }
@@ -192,18 +192,45 @@ p {
 
 /* Hero Section */
 .hero {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #2D5A87 0%, #1E3A5F 100%);
     color: var(--white);
     padding: 120px 0 80px;
     overflow: hidden;
     position: relative;
 }
 
+/* Hero Visual */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-top: -3.5rem;
+}
+
+.dashboard-illustration {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.dashboard-illustration:hover {
+    transform: scale(1.02);
+}
+
 .hero-content {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+}
+
+.hero-text {
+    text-align: left;
 }
 
 .hero-title {
@@ -234,7 +261,7 @@ p {
 
 .hero-buttons .btn-secondary:hover {
     background: var(--white);
-    color: var(--primary-color);
+    color: #1E3A5F;
 }
 
 .trust-badges {
@@ -997,6 +1024,21 @@ section {
         text-align: center;
         gap: 2rem;
     }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-visual {
+        margin-top: 0;
+        align-items: center;
+    }
+    
+    .dashboard-illustration {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
 
     .hero-title {
         font-size: 2.5rem;
@@ -1076,15 +1118,7 @@ section {
         height: 32px;
     }
     
-    .hero-logo-icon {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .logo-glow {
-        width: 200px;
-        height: 200px;
-    }
+
     
     .footer-logo-img {
         height: 32px;
@@ -1123,6 +1157,12 @@ section {
 
     .contact-form {
         padding: 1.5rem;
+    }
+    
+    .dashboard-illustration {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
     }
 
     .brand-logo {
