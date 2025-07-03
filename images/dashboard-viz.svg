@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#F8FAFC" rx="12"/>
+    
+    <!-- Top Chart -->
+    <rect x="40" y="40" width="720" height="240" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
+    <path d="M60 200 L140 160 L220 180 L300 140 L380 120 L460 160 L540 140 L620 180 L700 160" 
+          stroke="#3B82F6" stroke-width="3" fill="none"/>
+    <path d="M60 220 L140 200 L220 220 L300 180 L380 160 L460 200 L540 180 L620 220 L700 200" 
+          stroke="#10B981" stroke-width="3" fill="none" opacity="0.6"/>
+    
+    <!-- Bottom Left Chart -->
+    <rect x="40" y="300" width="350" height="260" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
+    <circle cx="215" cy="430" r="100" stroke="#E2E8F0" fill="none"/>
+    <path d="M215 430 L215 330 A100 100 0 0 1 301 478 Z" fill="#3B82F6"/>
+    <path d="M215 430 L301 478 A100 100 0 0 1 129 478 Z" fill="#10B981"/>
+    <path d="M215 430 L129 478 A100 100 0 0 1 215 330 Z" fill="#F59E0B"/>
+    
+    <!-- Bottom Right Chart -->
+    <rect x="410" y="300" width="350" height="260" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
+    <rect x="430" y="340" width="40" height="200" fill="#3B82F6" rx="4"/>
+    <rect x="490" y="380" width="40" height="160" fill="#10B981" rx="4"/>
+    <rect x="550" y="420" width="40" height="120" fill="#F59E0B" rx="4"/>
+    <rect x="610" y="460" width="40" height="80" fill="#EF4444" rx="4"/>
+    <rect x="670" y="500" width="40" height="40" fill="#8B5CF6" rx="4"/>
+</svg> 
